@@ -11,25 +11,34 @@
             Console.WriteLine("3 - Options");
             Console.WriteLine("4 - Quit");
             Console.WriteLine("***********");
+            
             string response = Console.ReadLine();
             if (response == "1")
             {
                 Console.WriteLine("Create new game");
             }
-            else if (response == "2")
+            if (response == "2")
             {
                 Console.WriteLine("Loading game");
             }
-            else if (response == "3")
+             if (response == "3")
             {
                 Console.WriteLine("setting option");
             }
-            else if (response == "4")
+            if (response == "0")
+            {
+                Console.WriteLine("invalid imput");
+            }
+             if (response == "4")
             {
                 Console.WriteLine("Back to Main menu");
             }
             while (response != "4")
             {
+                if (response == "5")
+                {
+                    Console.WriteLine("invalid imput");
+                }
                 Console.WriteLine("***********");
                 Console.WriteLine("Menu:");
                 Console.WriteLine("1 - New Game");
@@ -42,18 +51,27 @@
                 {
                     Console.WriteLine("Create new game");
                 }
-                else if (response == "2")
+                 if (response == "2")
                 {
                     Console.WriteLine("Loading game");
                 }
-                else if (response == "3")
+                 if (response == "3")
                 {
                     Console.WriteLine("setting option");
                 }
-                else if (response == "4")
+                if (response == "0")
+                {
+                    Console.WriteLine("invalid imput");
+                }
+                 if (response == "4")
                 {
                     Console.WriteLine("Back to Main menu");
                 }
+                if ( response == "5" )
+                {
+                    Console.WriteLine("invalid imput");
+                }
+
             }
         }
     }
